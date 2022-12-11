@@ -28,7 +28,8 @@ export default function AuthorModal({ isActive, onDismiss }) {
             </button>
             <button
               className="button"
-              onClick={() => {
+              onClick={(event) => {
+                event.preventDefault();
                 onDismiss && onDismiss(null);
               }}
             >
